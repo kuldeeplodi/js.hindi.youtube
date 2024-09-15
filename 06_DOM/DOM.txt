@@ -1,0 +1,10 @@
+title.innerText
+
+'learning document objective model(DOM)'
+
+title.textContent
+
+'learning document objective model(DOM) hello world'
+
+title.innerHTML
+'learning document objective model(DOM) <span style="display:none">hello world</span>'
