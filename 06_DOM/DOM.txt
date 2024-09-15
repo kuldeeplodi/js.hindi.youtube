@@ -8,3 +8,7 @@ title.textContent
 
 title.innerHTML
 'learning document objective model(DOM) <span style="display:none">hello world</span>'
+
+
+convert nodelist into array
+Array.from(list) [where list is a nodelist]
