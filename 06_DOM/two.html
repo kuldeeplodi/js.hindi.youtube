@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text html</title>
+</head>
+<style>body{background-color: black;color: #f4ecec;}
+    
+</style>
+<body>
+   
+    
+</body>
+<script>
+   const div=document.createElement('div')
+   console.log(div)
+   div.className="children"
+   div.id=Math.random()
+   div.setAttribute("title","generated title")
+   div.style.backgroundColor="gray"
+   div.style.padding="12px"
+// div.innerText="kuldeep"
+const addtext =document .createTextNode("kuldeep")
+div.appendChild(addtext)
+
+
+
+   document.body.appendChild(div)
+
+</script>
+</html>
