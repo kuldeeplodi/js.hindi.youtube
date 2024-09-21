@@ -1,0 +1,22 @@
+Event Propagation determines in which order the elements receive the event.
+There are two ways to handle this event propagation order of HTML DOM is 
+Event Bubbling and Event Capturing.
+
+
+Event bubbling: Handlers run from innermost to outermost element.
+
+Example: Clicking nested component3 triggers handlers from component3 to component1.
+
+Event capturing (or trickling): Handlers run from outermost to innermost element.
+
+
+
+/**************************************************************************************/
+element.addEventListener(event, listener, useCapture);
+
+event: event can be any valid JavaScript event. 
+
+listener(handler function): It can be a JavaScript function that responds to the event occurring.
+
+useCapture: It is an optional parameter used to control event propagation. 
+A boolean value is passed where “true” denotes the capturing phase and “false” denotes the bubbling phase.
