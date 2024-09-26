@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1 id="title">async coding</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+   const saydate = (str)=>{
+    console.log(str,Date.now())
+   }
+   
+   const interval=setInterval(saydate,1000,"kuldeep")
+   clearInterval(interval)
+</script>
+</html>

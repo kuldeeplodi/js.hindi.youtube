@@ -341,3 +341,34 @@ const form = document.querySelector("form");
   </script>
 
 ```
+
+## project 5
+``` javascript
+const randomcolor = () => {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    };
+    let interval;
+    const startChangeColor = () => {
+      if (!interval) {
+        interval = setInterval(changeColor, 1000);
+      }
+      function changeColor() {
+        document.body.style.backgroundColor = randomcolor();
+        console.log(randomcolor());
+      }
+    };
+    const stopChangeColor = () => {
+      clearInterval(interval);
+      interval = null;
+    };
+
+    document
+      .querySelector(".start")
+      .addEventListener("click", startChangeColor);
+    document.querySelector(".stop").addEventListener("click", stopChangeColor);
+```
