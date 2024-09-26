@@ -6,7 +6,19 @@
     <title>async</title>
 </head>
 <body>
-    <h1>async coding</h1>
-    <button>click</button>
+    <h1 id="title">async coding</h1>
+    <button id="start">click</button>
 </body>
+<script>
+    const title=document.querySelector("#title")
+    // setTimeout(()=>{
+    //     title.innerHTML="javascript coding"
+    // },2000)
+    document.querySelector("#start").addEventListener("click",()=>{
+        setTimeout(()=>{
+        title.innerHTML="javascript coding"
+        console.log("start")
+    },2000)
+    })
+</script>
 </html>
